@@ -1,0 +1,19 @@
+﻿{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/cities",
+      "DownstreamScheme": "https",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "tecontratoapi.azurewebsites.net",
+          "Port": 443
+        }
+      ],
+      "UpstreamPathTemplate": "/api/cities",
+      "UpstreamHttpMethod": ["Get"]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:5021"
+  }
+}
